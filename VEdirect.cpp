@@ -60,7 +60,7 @@ void VEdirect::begin(uint8_t pin_rx, uint8_t pin_tx) {
 	SoftwareSerial *softSerial = new SoftwareSerial(_pin_rx, _pin_tx);
 
 	//Initialize the 'Wire' class for I2C-bus communication.
-	softSerial->begin(9600);
+	softSerial->begin(19200);
 
 	vedirect_data = softSerial;
 }
